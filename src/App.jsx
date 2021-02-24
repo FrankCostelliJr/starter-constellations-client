@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     const url = `${process.env.REACT_APP_API_BASE_URL}/constellations`;
-    console.log(url)
+    console.log('server', url)
     fetch(url)
       .then((response) => response.json())
       .then((response) => {
